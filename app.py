@@ -10,12 +10,12 @@ import random
 import json
 
 app  = Flask(__name__)
-PORT = 3017
+PORT = 3018
 
 FILEPATH = "data.json"
     
 '''
-    http://0.0.0.0:3017/
+    http://0.0.0.0:3018/
 
     https://www.youtube.com/watch?v=wgfc07NJskY
 '''
@@ -30,7 +30,7 @@ def startpy():
     return render_template("index.html")
 
 '''
-    http://0.0.0.0:3017/data
+    http://0.0.0.0:3018/data
 
 '''
 @app.route("/data", methods=["GET"])
